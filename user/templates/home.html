@@ -1,0 +1,24 @@
+{% extends 'base.html'%} 
+{% load static %}
+{%block title%} Homepage {%endblock title%} 
+{%block main%}
+<!-- <a href="{% url 'about' %}">About page</a> -->
+<h2>This is our site</h2>
+<p>Welcome to our site</p>
+<p>
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, sint delectus.
+  Laboriosam eligendi tempore, fugiat est sequi temporibus quo libero harum
+  blanditiis voluptas id quibusdam earum unde quidem et veritatis non incidunt
+  voluptate! Nostrum, dignissimos repellat tempore similique dolore reiciendis.
+</p>
+<img src="{% static 'assets/AfricanMinerals.jpg' %}" alt="Africa Mineral Resources"/>
+<p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis provident,
+  facilis aliquam ipsa, temporibus aspernatur ipsam expedita, nisi accusantium
+  molestias obcaecati. Fugit, voluptatum autem at ratione suscipit maiores
+  labore tenetur quaerat nihil! Earum, doloremque. Corrupti sit maxime, vero
+  quis dicta impedit doloremque voluptatibus inventore architecto nostrum vel
+  illo blanditiis officia.
+</p>
+{% include 'testimony.html'%} 
+{% endblock main %}

@@ -1,0 +1,18 @@
+{% extends 'base.html'%}
+
+{%block title %} Contact {% endblock title%}
+
+{%block main%}
+<!-- {% include 'testimony.html'%}
+<h1>You can contact us via our Whatsapp, Twitter, and Facebook pages</h1> -->
+<form action="" method="post">
+    {% csrf_token %}
+    <label for="">Name</label><br>
+    <input type="text" name="name" ><br>
+    <label for="">Email</label><br>
+    <input type="email" name="email" id="" ><br>
+    <label for="">Message</label><br>
+    <textarea name="message" id="" cols="50" rows="10" ></textarea><br>
+    <button>Submit</button>
+</form>
+{% endblock main %}
